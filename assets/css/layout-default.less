@@ -1,0 +1,99 @@
+html {
+  width: 50%;
+  height: 100%;
+  //height: auto;
+  //这里出了问题 把它溢出隐藏
+
+}
+//body {
+//  font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//  font-size: 12px;
+//  line-height: 1.5;
+//  color: rgba(0, 0, 0, 0.65);
+//  background-color: #fff;
+//  height: auto;
+//}
+//浏览器滚动条样式
+::-webkit-scrollbar-track-piece{width:10px;background-color: #f2f2f2;  }
+
+::-webkit-scrollbar{width:10px;height:6px ; }
+
+::-webkit-scrollbar-thumb{height:50px;background:#bfbfbf;cursor:pointer;}
+
+::-webkit-scrollbar-thumb:hover{background: #bfbfbf; cursor:pointer}
+
+.top-bar {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 70px;
+  z-index: 100;
+  .logo {
+    float: left;
+    width: 170px;
+    height: 70px;
+    img {
+      width: 170px;
+      height: 60px;
+      margin-top: 5px;
+    }
+  }
+  .top-menu {
+    float: left;
+  }
+  ul.top-menu > li {
+    display: inline-block;
+    width: 120px;
+    height: 70px;
+    text-align: center;
+  }
+  ul.top-menu > li > a {
+    color: black;
+    font-size: 14px;
+    display: block;
+    height: 100%;
+    line-height: 70px;
+  }
+  ul.top-menu > li > a:active, ul.top-menu > li > a:hover {
+    color: #dab968;
+  }
+}
+
+.layout-main {
+  width: 100%;
+  height: 100%;
+  //height: auto;
+}
+.layout-left-menu {
+  width: 170px;
+  position: absolute;
+  left: 0;
+  //top: 70px;
+  height: 100%;
+}
+.layout-wrapper {
+  width: 100%;
+  height: 100%;
+  //overflow-x: scroll;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+.layout-content {
+  margin-left: 170px;
+  //margin-top: 70px;
+  height: 100%;
+}
+.layout-footer {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding-left: 170px;
+}
+
+.text-center {
+  text-align: center;
+}

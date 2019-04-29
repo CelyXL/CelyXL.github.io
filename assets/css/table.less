@@ -1,0 +1,81 @@
+.pp-table{
+  position:relative;//相对位置
+  top:50px;
+  border-radius:3px;//向div元素添加圆角边框：
+  border:1px solid #ccc;
+  padding:10px;//每个边的内边距都为10
+  width:1200px; //这里限制talbe的最大宽度;
+  margin:0 auto;
+
+  .ant-btn-group > .ant-btn{
+    background:#e5e5e5 !important;//!important的意思就是这个优先级最高
+  }
+
+  .ant-pagination{
+    .ant-pagination-item-active{
+      background:#e5e5e5;
+      a{
+        color:#666;
+      }
+    }
+  }
+
+  .ant-spin-container{
+    table{
+      border:1px solid #ccc;;
+      color:#050505;
+      font-size:14px;
+      border-collapse: collapse;
+      overflow:auto;
+      tr:nth-of-type(even){
+        background:#f7f7f7;
+      }
+      th{
+        background:#e5e5e5;
+      }
+      td{
+        span{
+          color:#666;
+        }
+      }
+      td,th{
+        box-sizing:border-box;
+        border-radius:0;
+        border:1px solid #ccc;
+        size:16px;
+        max-width:inherit !important;
+        padding:10px 8px;//10为上下内边距，8为左右内边距
+        span{
+          font-size:13px !important;
+         max-width:inherit !important;
+        }
+        img{
+          width:50px;
+          height:50px;
+        }
+        border-right:0;
+      }
+      tr td:first-child{
+        border-left:0;
+      }
+      tr td:last-child{
+      }
+      .action{
+        button{
+          background:#e5e5e5 !important;
+          border:2px solid #e5e5e5;
+        }
+      }
+    }
+  }
+  .pp-table-info{
+    position:absolute;
+    bottom:25px;
+    left:10px;
+    font-size:14px;
+  }
+}
+
+
+
+
